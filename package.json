@@ -12,7 +12,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lintThis": "eslint src/* --ext .js,.jsx,.scss --fix"
+    "lintThis": "eslint src/* --ext .js --fix"
   },
   "pre-commit": [
     "lintThis"
@@ -33,6 +33,10 @@
     "redux-thunk": "^2.2.0"
   },
   "eslintConfig": {
-    "extends": "universe/web"
+    "extends": [
+      "universe",
+      "universe/native",
+      "universe/web"
+    ]
   }
 }
