@@ -12,7 +12,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lintThis": "eslint src/* --ext .js .jsx .scss --fix"
+    "lintThis": "eslint src/* --ext .js,.jsx,.scss --fix"
   },
   "pre-commit": [
     "lintThis"
