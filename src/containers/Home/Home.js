@@ -24,6 +24,7 @@ export class Home extends Component {
     const { buttonToggle } = this.props;
     return (
       <div>
+        HIHI
         {buttonToggle.isToggle ? 'TRUE' : 'FALSE'}
         <Button onClick={this._onClick} />
       </div>
