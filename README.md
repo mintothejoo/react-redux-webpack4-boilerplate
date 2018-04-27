@@ -128,6 +128,13 @@ const mapStateToProps = state => ({
 The `state` variable in the  `mapStateToProps()` function contains all of the states in the 
 app. In this case we chose the `toggle` to be used into our component. We now assign it to a variable `buttonToggle` and will used like `this.props.buttonToggle`.
 
+### Process
+
+If we go through this step by step, redux isn't as hard as you think!
+
+1. We create a Component directory, name it for whatever purpose you'll be using this for. 
+
+
 ### Actions + Reducer beauty
 
 Now that we got the basic idea out of the way, let's move on to the concept of changing the state when something happens!
