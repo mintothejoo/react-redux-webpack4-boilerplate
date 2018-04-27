@@ -1,8 +1,6 @@
-import React, { Component
- } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { connect 
-} from 'react-redux';
+import { connect } from 'react-redux';
 
 export class About extends Component {
   static propTypes = {
@@ -14,9 +12,7 @@ export class About extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-
-});
+const mapStateToProps = state => ({});
 
 const mapDispatchToProps = {};
 
