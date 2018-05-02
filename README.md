@@ -198,9 +198,7 @@ export default toggle;
 
 * `//2` this is the initial state so when no actions are being called, we set it to these specific attributes
 
-* `//3` this is the *case* statement to do certain state changing based off of the action type called... This is the part where the `Reducer` says:
-
-* `Reducer:` Okay Action! I got your `action details` I'll change it accordingly!
+* `//3` this is the *case* statement to do certain state changing based off of the action type called... This is the part where the `Reducer` says: Okay Action! I got your `action details` I'll change it accordingly!
 
 In this case our `action details` would be the `action.payload` and `action.status` these are completely up to what the dispatch sends, this will ultimately be what your `states` will be changed to!
 
