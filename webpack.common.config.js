@@ -13,9 +13,9 @@ module.exports = {
         uglifyOptions: {
           ecma: 6,
           compress: {
-            drop_console: process.env.NODE_ENV === 'production' ? true : false,
-          }
-        }
+            drop_console: process.env.NODE_ENV === 'production',
+          },
+        },
       }),
       new OptimizeCSSAssetsPlugin(),
     ],
@@ -56,6 +56,6 @@ module.exports = {
       action: path.resolve(__dirname, 'src/action'),
       asset: path.resolve(__dirname, 'src/asset'),
       constants: path.resolve(__dirname, 'src/constants'),
-    }
+    },
   },
 };
