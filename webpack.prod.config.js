@@ -8,7 +8,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
-const common = require('./Web.common.config.js');
+const common = require('./webpack.common.config.js');
 
 const prodEnv = {
   NODE_ENV: JSON.stringify('production'),
@@ -26,7 +26,7 @@ const cssFilename = 'static/css/[name].[hash:8].css';
 const extractCSS = new ExtractTextPlugin('static/css/[name]-[hash:8].css');
 module.exports = merge(common, {
   cache: false,
-  devServer: { 
+  devServer: {
     historyApiFallback: true, //always true
     contentBase: '../dist',
   },
@@ -37,12 +37,13 @@ module.exports = merge(common, {
     publicPath: '/',
   },
   devtool: 'cheap-module-eval-source-map',
-  stats: { //need it
+  stats: {
+    //need it
     entrypoints: false,
     children: false,
   },
   module: {
-    strictExportPresence: true,  //need this
+    strictExportPresence: true, //need this
     rules: [
       {
         test: /\.(js|jsx)$/,
@@ -77,16 +78,12 @@ module.exports = merge(common, {
             loader: require.resolve('babel-loader'),
             exclude: /node_modules/,
             options: {
-              plugins: [
-                'react-html-attrs',
-                'transform-decorators-legacy',
-                'transform-class-properties',
-              ],
+              plugins: ['react-html-attrs', 'transform-decorators-legacy', 'transform-class-properties'],
               compact: true,
             },
           },
           {
-            test: /\.css$/, 
+            test: /\.css$/,
             use: extractCSS.extract({
               fallback: 'style-loader',
               use: [{ loader: 'css-loader' }, { loader: 'postcss-loader' }],

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import './style.css';
+import './style.scss';
 
 export class Button extends Component {
   static propTypes = {
@@ -12,7 +12,7 @@ export class Button extends Component {
   render() {
     return (
       <div className="button-container" onClick={() => this.props.onClick()}>
-        HELLO BUTTON
+        HELLO BUTTON HIHIHIHI
       </div>
     );
   }
