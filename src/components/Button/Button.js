@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import './style.scss';
+import './style.css';
 
 export class Button extends Component {
   static propTypes = {
