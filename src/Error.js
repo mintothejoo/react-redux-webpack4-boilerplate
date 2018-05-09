@@ -7,7 +7,7 @@ export default class CatchError extends Component {
   };
   componentDidCatch(error, info) {
     this.setState({ hasError: true, error });
-    console.log("hey", error, info)
+    console.log('hey', error, info);
   }
 
   render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CatchError from './Error'
+import CatchError from './Error';
 import Root from './router/Root';
 
 class App extends Component {
