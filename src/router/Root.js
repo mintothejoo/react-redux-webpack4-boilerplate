@@ -8,7 +8,6 @@ import { Home, About } from '../containers';
 
 class Root extends Component {
   render() {
-    console.log(store);
     return (
       <Provider store={store}>
         <Router>
