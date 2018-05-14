@@ -14,7 +14,7 @@
     "build-windows": "set NODE_ENV=production  && webpack --config web.prod.config.js --mode production --colors",
     "build-staging": "NODE_ENV=staging webpack --mode production --config web.prod.config.js --colors",
     "lintThis": "eslint src/* --ext .js --fix",
-    "storybook": "start-storybook -p 9009 -s public",
+    "storybook": "start-storybook -p 9009 -c ./.storybook -s public",
     "build-storybook": "build-storybook -s public"
   },
   "pre-commit": [
