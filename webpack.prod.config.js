@@ -36,7 +36,7 @@ module.exports = merge(common, {
     filename: 'static/js/[name].[hash:8].js',
     publicPath: '/',
   },
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'cheap-source-map',
   stats: {
     //need it
     entrypoints: false,
@@ -145,11 +145,11 @@ module.exports = merge(common, {
   },
   plugins: [
     new CleanWebpackPlugin(path.join(__dirname, 'dist')),
-    new FaviconsWebpackPlugin({
-      logo: path.join(__dirname, 'public/favicon.png'),
-      prefix: 'static/media/icon[hash:8]/',
-      icons: { favicons: true },
-    }),
+    // new FaviconsWebpackPlugin({
+    //   logo: path.join(__dirname, 'public/favicon.png'),
+    //   prefix: 'static/media/icon[hash:8]/',
+    //   icons: { favicons: true },
+    // }),
     new HtmlWebpackPlugin({
       sinject: true,
       template: path.join(__dirname, 'public/index.html'),

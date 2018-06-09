@@ -3,7 +3,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
-  entry: ['babel-polyfill', path.join(__dirname, 'src/index.js')],
+  entry: [path.join(__dirname, 'src/index.js')],
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
@@ -49,7 +49,7 @@ module.exports = {
     },
   },
   resolve: {
-    extensions: ['.js', '.json', '.css', '.less', '.scss', '.sass', '.jsx'],
+    extensions: ['.js', '.json', '.css', '.less', '.scss', '.sass', '.jsx', '.png', '.jpg',],
     alias: {
       components: path.resolve(__dirname, 'src/components'),
       containers: path.resolve(__dirname, 'src/containers'),
