@@ -53,8 +53,8 @@ module.exports = {
     alias: {
       components: path.resolve(__dirname, 'src/components'),
       containers: path.resolve(__dirname, 'src/containers'),
-      action: path.resolve(__dirname, 'src/action'),
-      asset: path.resolve(__dirname, 'src/asset'),
+      action: path.resolve(__dirname, 'src/redux/actions'),
+      asset: path.resolve(__dirname, 'src/assets'),
       constants: path.resolve(__dirname, 'src/constants'),
     },
   },

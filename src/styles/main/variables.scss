@@ -1,34 +1,59 @@
 //add more as you wish!
 
-$font-family: 'Roboto', sans-serif;
+$primary-font-family: 'Roboto', sans-serif;
 $secondry-font-family: 'lato', 'sans-serif';
 
-$primary-color: white;
-$secondary-color: white;
-$background-color: #f5f5f5;
-$light-grey-color: #333;
+$background-color:#f5f5f5;
 
-@mixin title($fontSize){
-    color: black;
-    font-size: $fontSize;
-    font-family: $secondry-font-family;
-    font-weight: 300;
-    line-height: 60px
+$font-color:#4b4f56;
+$lighter-font-color:#616770;
+$lightest-font-color:#90949c;
+
+@mixin page-title(){
+    color: $font-color!important;
+    font-size: 30px!important;
+    font-family: $secondry-font-family!important;
+    font-weight: 300!important;
 }
 
-@mixin description($fontSize, $lineHeight){
-    color: $color;
-    font-family: $font-family;
-    font-size: $fontSize;
-    font-weight: 300;
-    line-height: $lineHeight;
+@mixin nav-title(){
+    color: $font-color!important;
+    font-size: 16px!important;
+    font-family: $secondry-font-family!important;
+    font-weight: 300!important;
 }
 
-@mixin headline($fontSize, $lineHeight){
-    font-family: $secondry-font-family;
-    color: $color;
-    font-size: $fontSize;
-    font-weight: 300;
-    line-height: $lineHeight;
+@mixin content-title(){
+    color: $lighter-font-color!important;
+    font-size: 16px!important;
+    font-family: $primary-font-family!important;
+    font-weight: 300!important;
 }
 
+@mixin description(){
+    color: $lighter-font-color!important;
+    font-size: 14px!important;
+    font-family: $primary-font-family!important;
+    font-weight: 300!important;
+}
+
+@mixin body-text(){
+    color: $lighter-font-color!important;
+    font-size: 14px!important;
+    font-family: $primary-font-family!important;
+    font-weight: 300!important;
+}
+
+@mixin small-text(){
+    color: $lighter-font-color!important;
+    font-size: 12px!important;
+    font-family: $primary-font-family!important;
+    font-weight: 300!important;
+}
+
+@mixin background-text($font-size){
+    color: $lightest-font-color!important;
+    font-size: $font-size!important;
+    font-family: $primary-font-family!important;
+    font-weight: 300!important;
+}

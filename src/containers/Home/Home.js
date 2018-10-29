@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { Image, Container, Segment, Header, Button } from 'semantic-ui-react';
 import { toggle } from '../../redux/actions';
-
-import { Button } from '../../components';
+// import { Button } from '../../components';
+import logo from '../../assets/images/logo.png';
 
 export class Home extends Component {
   static propTypes = {
@@ -24,9 +25,18 @@ export class Home extends Component {
     const { buttonToggle } = this.props;
     return (
       <div>
-        HIHI
-        {buttonToggle.isToggle ? 'TRUE' : 'FALSE'}
-        <Button onClick={this._onClick} />
+        <Container className="main-content">
+          <Segment>
+            <Container textAlign="center">
+              <Header className="page-title"> Welcome to ReactDuxPack! </Header>
+              <Image centered src={logo} size="small" />
+            </Container>
+          </Segment>
+          <Segment>
+            {buttonToggle.isToggle ? 'TRUE' : 'FALSE'}
+            <Button content="click me!" onClick={this._onClick} />
+          </Segment>
+        </Container>
       </div>
     );
   }
@@ -43,4 +53,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 // connect hooks to higher order component
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Home);
