@@ -4,9 +4,7 @@ import 'styles/Main.scss';
 
 class App extends Component {
   render() {
-    return (
-      <Root />
-    );
+    return <Root />;
   }
 }
 
