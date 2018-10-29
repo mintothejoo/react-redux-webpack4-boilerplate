@@ -1,2 +1,0 @@
-export const BUTTON_ACTIVE = 'BUTTON_ACTIVE';
-export const BUTTON_DISABLED = 'BUTTON_DISABLED';

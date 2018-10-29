@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux';
-import toggle from './ToggleReducer';
-import reducerA from './ReducerA';
+import commonReducer from './CommonReducer';
 
 const rootReducer = combineReducers({
-  toggle,
-  reducerA,
+  commonReducer,
 });
 
 export default rootReducer;
