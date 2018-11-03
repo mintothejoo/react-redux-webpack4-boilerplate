@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import logo from 'assets/logo.svg';
 
 export class Home extends Component {
-  static propTypes = {
-    prop: PropTypes,
-  };
-
   render() {
     return (
       <div className="App">
@@ -29,7 +25,9 @@ export class Home extends Component {
   }
 }
 
-const mapStateToProps = state => ({});
+const mapStateToProps = state => ({
+  commonReducer: state.commonReducer,
+});
 
 const mapDispatchToProps = {};
 

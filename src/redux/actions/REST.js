@@ -1,7 +1,6 @@
 import to from 'to-case';
 import { toast } from 'react-toastify';
 import { post as postRequest, put as putRequest, fetch, remove as deleteRequest } from './Request';
-import { logout } from './../actions/Login';
 
 import {
   ACTION_GET,
